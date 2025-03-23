@@ -6,7 +6,7 @@ import { prettyJSON } from 'hono/pretty-json';
 
 import { api } from './routes/index.routes.js';
 
-const PORT = process.env.PORT ?? '3000';
+const PORT = process.env.PORT ?? '8000';
 const port = Number.parseInt(PORT, 10);
 
 const app = new Hono();
@@ -36,3 +36,5 @@ serve(
     console.log(`Server is running on http://${info.address}:${info.port}`);
   },
 );
+
+//DATABASE_URL=postgresql://postgres:dimma2007@localhost:5432/vef2_verkefni4
